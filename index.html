@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .main
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        background-color: blueviolet;
+        align-items: start;
+        margin: 20px;
+        padding: 20px;
+        border: 2px double black;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+    .box1
+    {
+        
+        background-color: rgb(215, 212, 23);
+        margin: 20px;
+        padding: 20px;
+        height: 250px;
+        width: 250px;
+        border: 2px double black;
+        border-radius: 20px;
+    }
+    .box2
+    {
+        background-color: rgb(255, 0, 34);
+        margin: 20px;
+        padding: 20px;
+        height: 250px;
+        width: 250px;
+        border: 2px solid rgb(17, 198, 59);
+        border-radius: 20px;
+    }
+    .box3
+    {
+        background-color: rgb(205, 38, 186);
+        margin: 20px;
+        padding: 20px;
+        height: 250px;
+        width: 250px;
+        border: 2px double orange;
+        border-radius: 20px;
+    }
+    .main2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: aqua;
+        margin: 20px;
+        padding: 20px;
+        height: 600px;
+        width: 600px;
+        border: 2px solid grey;
+        border-radius: 20px;
+    }
+    .boxer1
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer2
+    {  
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer3
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .main3
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: end;
+        background-color: aqua;
+        margin: 20px;
+        padding: 20px;
+        height: 600px;
+        width: 600px;
+        border: 2px solid grey;
+        border-radius: 20px;
+    }
+    .boxer4
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer5
+    {  
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer6
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .main4
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: end;
+        background-color: aqua;
+        margin: 20px;
+        padding: 20px;
+        height: 600px;
+        width: 600px;
+        border: 2px solid grey;
+        border-radius: 20px;
+    }
+    .boxer7
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer8
+    {  
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer9
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .main5
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: centre;
+        align-items: end;
+        background-color: aqua;
+        margin: 20px;
+        padding: 20px;
+        height: 600px;
+        width: 600px;
+        border: 2px solid grey;
+        border-radius: 20px;
+
+    }
+    .boxer10
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer11
+    {  
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer12
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .main6
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        background-color: aqua;
+        margin: 20px;
+        padding: 20px;
+        height: 600px;
+        width: 600px;
+        border: 2px solid grey;
+        border-radius: 20px;
+
+    }
+    .boxer13
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer14
+    {  
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+    .boxer15
+    {
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 20px;
+        margin:10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+</style>
+<body>
+    <div class="main">
+    <b class="box1"><img src="cricket.jpg" alt="cricket" 
+        height= "100%" width="100%">
+        <br><br>Cricket</b>
+    <b class="box2"><img src="football.avif" alt="football"
+        height="100%" width="100%"><br><br>
+        Football</b>
+    <b class="box3"><img src="tennis.jpg" alt="tennis"
+        height="100%" width="100%">
+        <br><br>Tennis</b>
+    </div>
+    <div class="main2">
+    <b class="boxer1"><img src="dog.avif" alt="dog" 
+        height="80%" width="80%"><br> Dog
+    </b>
+    <b class="boxer2"><img src="cat.avif" alt="cat"
+        height="80%" width="80%"><br> Cat
+    </b>
+    <b class="boxer3"><img src="parrot.avif" alt="parrot"
+        height="80%" width="80%"><br> Parrot
+    </b>
+    </div>
+    <div class="main3">
+    <b class="boxer4"><img src="dog.avif" alt="dog" 
+        height="80%" width="80%"><br> Dog
+    </b>
+    <b class="boxer5"><img src="cat.avif" alt="cat"
+        height="80%" width="80%"><br> Cat
+    </b>
+    <b class="boxer6"><img src="parrot.avif" alt="parrot"
+        height="80%" width="80%"><br> Parrot
+    </b>
+    </div>
+    <div class="main4">
+    <b class="boxer7"><img src="dog.avif" alt="dog" 
+        height="80%" width="80%"><br> Dog
+    </b>
+    <b class="boxer8"><img src="cat.avif" alt="cat"
+        height="80%" width="80%"><br> Cat
+    </b>
+    <b class="boxer9"><img src="parrot.avif" alt="parrot"
+        height="80%" width="80%"><br> Parrot
+    </b>
+    </div>
+    <div class="main5">
+    <b class="boxer10"><img src="dog.avif" alt="dog" 
+        height="80%" width="80%"><br> Dog
+    </b>
+    <b class="boxer11"><img src="cat.avif" alt="cat"
+        height="80%" width="80%"><br> Cat
+    </b>
+    <b class="boxer12"><img src="parrot.avif" alt="parrot"
+        height="80%" width="80%"><br> Parrot
+    </b>
+    </div>
+    <div class="main6">
+    <b class="boxer13"><img src="dog.avif" alt="dog" 
+        height="80%" width="80%"><br> Dog
+    </b>
+    <b class="boxer14"><img src="cat.avif" alt="cat"
+        height="80%" width="80%"><br> Cat
+    </b>
+    <b class="boxer15"><img src="parrot.avif" alt="parrot"
+        height="80%" width="80%"><br> Parrot
+    </b>
+    </div>
+</body>
+</html>
